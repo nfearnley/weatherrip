@@ -84,8 +84,8 @@ def getImageList(site, year, month, day, hour, minute, duration, image_type):
     return animationInfo, imageArray, blobArray
 
 def main():
-    images = getImageList("NAT", 2017, 1, 1, 1, 10, 2, SNOW14)
-    for i in images[2]:
+    descriptions, keywords, images = getImageList("NAT", 2017, 1, 1, 1, 10, 2, SNOW14)
+    for i in images:
         print(i)
     
 if __name__ == "__main__":
